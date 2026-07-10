@@ -1,0 +1,439 @@
+{
+  // ==========================================
+  // 1. СИСТЕМНІ НАЛАШТУВАННЯ ТА СЕСІЇ
+  // ==========================================
+  "cli_default_open_behavior": "existing_window",
+  "icon_theme": "Zed (Default)",
+  "theme": "GitHub Dark Default",
+  "restore_on_startup": "last_session",
+  "restore_on_file_reopen": true,
+  "close_on_file_delete": true,
+  "when_closing_with_no_tabs": "platform_default",
+  "auto_update": true,
+  "base_keymap": "VSCode",
+  "session": {
+    "restore_unsaved_buffers": true,
+    "trust_all_worktrees": false,
+  },
+
+  // ==========================================
+  // 2. ІНТЕРФЕЙС ТА ВІЗУАЛ (GUI)
+  // ==========================================
+  "ui_font_family": ".SystemUIFont",
+  "ui_font_size": 12,
+  "ui_font_weight": 500,
+  "bottom_dock_layout": "contained",
+  "resize_all_panels_in_dock": ["left", "right", "bottom"],
+  "active_pane_modifiers": {
+    "border_size": 0.0,
+    "inactive_opacity": 0.8,
+  },
+  "title_bar": {
+    "button_layout": "standard",
+    "show_onboarding_banner": false,
+    "show_project_items": false,
+    "show_sign_in": false,
+    "show_user_menu": false,
+    "show_user_picture": false,
+    "show_branch_name": false,
+    "show_branch_status_icon": false,
+    "show_menus": false,
+  },
+
+  // ==========================================
+  // 3. ВКЛАДКИ ТА СМУГИ ПРОКРУТКИ (Tabs & Navigation)
+  // ==========================================
+  "max_tabs": null,
+  "tabs": {
+    "activate_on_close": "left_neighbour",
+    "close_position": "right",
+    "file_icons": false,
+    "git_status": false,
+    "show_close_button": "always",
+    "show_diagnostics": "off",
+  },
+  "tab_bar": {
+    "show": true,
+    "show_nav_history_buttons": false,
+    "show_pinned_tabs_in_separate_row": false,
+    "show_tab_bar_buttons": false,
+  },
+  "preview_tabs": {
+    "enabled": false, // Тимчасові вкладки вимкнено повністю
+  },
+  "scrollbar": {
+    "show": "always",
+    "cursors": true,
+    "git_diff": false,
+    "search_results": true,
+    "selected_text": true,
+    "selected_symbol": true,
+    "diagnostics": "all",
+    "axes": { "horizontal": true, "vertical": true },
+  },
+
+  // ==========================================
+  // 4. БІЧНІ ТА СЛУЖБОВІ ПАНЕЛІ (Panels & Bars)
+  // ==========================================
+  "project_panel": {
+    "dock": "right",
+    "entry_spacing": "standard",
+    "git_status": true,
+    "default_width": 240,
+    "auto_reveal_entries": false,
+    "auto_fold_dirs": false,
+    "auto_open": { "on_create": true },
+    "bold_folder_labels": false,
+    "indent_size": 9,
+    "indent_guides": { "show": "always" },
+    "sort_mode": "directories_first",
+    "sort_order": "default",
+    "starts_open": true,
+    "drag_and_drop": true,
+    "button": true,
+    "diagnostic_badges": false,
+    "file_icons": true,
+    "folder_icons": true,
+    "git_status_indicator": false,
+    "hide_gitignore": false,
+    "hide_hidden": false,
+    "hide_root": false,
+    "scrollbar": { "show": "always" },
+    "show_diagnostics": "all",
+    "sticky_scroll": true,
+  },
+  "debugger": { "button": false },
+  "outline_panel": {
+    "button": true,
+    "auto_fold_dirs": true,
+    "auto_reveal_entries": true,
+    "default_width": 400,
+    "dock": "right",
+    "expand_outlines_with_depth": 0,
+    "file_icons": true,
+    "folder_icons": true,
+    "git_status": true,
+    "indent_guides": { "show": "never" },
+    "indent_size": 8,
+    "scrollbar": { "show": "auto" },
+  },
+  "status_bar": {
+    "active_encoding_button": "disabled",
+    "active_language_button": true,
+    "cursor_position_button": false,
+    "line_endings_button": false,
+    "show_active_file": false,
+  },
+  "toolbar": {
+    "agent_review": false,
+    "breadcrumbs": false,
+    "code_actions": false,
+    "quick_actions": false,
+    "selections_menu": false,
+  },
+
+  // ==========================================
+  // 5. РЕДАКТОР КОДУ: ШРИФТИ ТА ВІЗУАЛ (Editor Look)
+  // ==========================================
+  "buffer_font_family": ".ZedMono",
+  "buffer_font_size": 11,
+  "buffer_font_weight": 400,
+  "buffer_line_height": "standard",
+  "buffer_font_features": {
+    "calt": false,
+    "zero": true,
+  },
+  "minimap": {
+    "show": "never",
+  },
+  "gutter": {
+    "bookmarks": false,
+    "breakpoints": false,
+    "folds": false,
+    "line_numbers": true,
+    "min_line_number_digits": 0,
+    "runnables": false,
+  },
+  "current_line_highlight": "all",
+  "selection_highlight": true,
+  "rounded_selection": false,
+  "unnecessary_code_fade": 0,
+  "line_indicator_format": "long",
+
+  // ==========================================
+  // 6. ПОВЕДІНКА РЕДАКТОРА ТА СКРОЛИНГ (Editor Behavior)
+  // ==========================================
+  "scroll_beyond_last_line": "one_page",
+  "scroll_sensitivity": 1,
+  "fast_scroll_sensitivity": 15,
+  "mouse_wheel_zoom": false,
+  "cursor_blink": false,
+  "cursor_shape": "bar",
+  "hide_mouse": "on_typing_and_action",
+  "autoscroll_on_clicks": false,
+  "multi_cursor_modifier": "alt",
+  "drag_and_drop_selection": { "enabled": false },
+  "double_click_in_multibuffer": "select",
+  "excerpt_context_lines": 2,
+  "expand_excerpt_lines": 5,
+
+  // ==========================================
+  // 7. РЕДАГУВАННЯ ТА АВТОФОРМАТУВАННЯ
+  // ==========================================
+  "autosave": "on_focus_change",
+  "format_on_save": "on",
+  "line_ending": "detect",
+
+  // ==========================================
+  // 8. ПІДКАЗКИ, ХІНТИ ТА АВТОДОПОВНЕННЯ (LSP)
+  // ==========================================
+  "hover_popover_enabled": true,
+  "hover_popover_delay": 300,
+  "hover_popover_sticky": true,
+  "hover_popover_hiding_delay": 0,
+  "auto_signature_help": false,
+  "show_signature_help_after_edits": false,
+  "code_lens": "off",
+  "diagnostics_max_severity": "all",
+  "snippet_sort_order": "bottom",
+  "go_to_definition_scroll_strategy": "center",
+  "go_to_definition_fallback": "find_all_references",
+  "lsp_document_colors": "inlay",
+  "lsp_document_links": true,
+  "lsp_highlight_debounce": 75,
+
+  // ==========================================
+  // 9. ПОШУК ТА ІНШІ СЛУЖБОВІ МОДУЛІ (Terminal)
+  // ==========================================
+  "search": {
+    "button": true,
+    "whole_word": false,
+    "case_sensitive": false,
+    "include_ignored": false,
+    "center_on_match": false,
+    "regex": false,
+  },
+  "terminal": {
+    "env": { "LD_LIBRARY_PATH": "" },
+    "alternate_scroll": "on",
+    "bell": "off",
+    "blinking": "off",
+    "button": false,
+    "copy_on_select": false,
+    "cursor_shape": "block",
+    "default_height": 100,
+    "default_width": 400,
+    "dock": "bottom",
+    "working_directory": "current_project_directory",
+    "flexible": true,
+    "font_size": 11,
+    "font_weight": 400,
+    "line_height": "standard",
+    "minimum_contrast": 0,
+    "show_count_badge": false,
+    "toolbar": { "breadcrumbs": false },
+    "detect_venv": {
+      "on": {
+        "directories": [".venv", "venv"],
+        "activate_script": "default",
+      },
+    },
+  },
+  "journal": {
+    "path": "~",
+    "hour_format": "hour24",
+  },
+
+  // ==========================================
+  // 10. ІНТЕГРАЦІЯ З GIT
+  // ==========================================
+  "diff_view_style": "split",
+  "git": {
+    "disable_git": false,
+    "enable_diff": true,
+    "enable_status": true,
+    "git_gutter": "hide",
+    "gutter_debounce": 0,
+    "hunk_style": "staged_hollow",
+    "inline_blame": {
+      "enabled": true,
+      "show_commit_summary": true,
+    },
+    "blame": { "show_avatar": true },
+    "branch_picker": { "show_author_name": false },
+  },
+
+  // ==========================================
+  // 11. ФАЙЛОВІ ВИКЛЮЧЕННЯ ТА БЕЗПЕКА
+  // ==========================================
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/.jj",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/__pycache__",
+    "**/*.pyc",
+    "**/*.pyo",
+    "**/*.pyd",
+    "**/.venv",
+    "**/venv",
+    "**/.env",
+    "**/.virtualenv",
+    "**/.pytest_cache",
+    "**/.mypy_cache",
+    "**/.ruff_cache",
+    "**/.tox",
+    "**/build",
+    "**/dist",
+    "**/*.egg-info",
+    "**/.idea",
+    "**/.vscode",
+  ],
+
+  // ==========================================
+  // 12. ШТУЧНИЙ ІНТЕЛЕКТ ТА ТЕЛЕМЕТРІЯ
+  // ==========================================
+  "disable_ai": true,
+  "private_files": [
+    "**/.env*",
+    "**/*.pem",
+    "**/config/database.yml",
+    "**/secret_tokens.json",
+  ],
+  "telemetry": {
+    "diagnostics": false,
+    "anthropic_retention": false,
+    "metrics": false,
+  },
+
+  // ==========================================
+  // 13. ПОРОЖНІ/РЕЗЕРВНІ ОБ'ЄКТИ
+  // ==========================================
+  "language_models": {},
+  "auto_install_extensions": {},
+  "auto_update_extensions": {},
+  "file_scan_inclusions": [],
+  "file_types": {},
+  "git_panel": {},
+  "git_hosting_providers": [],
+  "collaboration_panel": { "button": false },
+  "calls": { "mute_on_join": false, "share_on_join": false },
+  "show_call_status_icon": false,
+
+  // ======================
+  // LANGUAGES LSP PYTHON
+  // ======================
+  "enable_language_server": true,
+  "languages": {
+    "Python": {
+      "indent_guides": { "enabled": false },
+      "allow_rewrap": "in_comments",
+      "always_treat_brackets_as_autoclosed": true,
+      "auto_indent": "syntax_aware",
+      "auto_indent_on_paste": true,
+      "colorize_brackets": false,
+      "completions": { "lsp": true },
+      "document_folding_ranges": "on",
+      "document_symbols": "on",
+      "debuggers": [],
+      "edit_predictions_disabled_in": [],
+      "show_edit_predictions": false,
+      "ensure_final_newline_on_save": true,
+      "extend_comment_on_newline": false,
+      "extend_list_on_newline": false,
+      "indent_list_on_tab": false,
+      "format_on_save": "on",
+      "hard_tabs": false,
+      "jsx_tag_auto_close": { "enabled": false },
+      "linked_edits": false,
+      "line_ending": "prefer_lf",
+      "preferred_line_length": 100,
+      "prettier": {},
+      "remove_trailing_whitespace_on_save": true,
+      "show_completion_documentation": false,
+      "show_completions_on_input": true,
+      "show_whitespaces": null,
+      "soft_wrap": null,
+      "tab_size": 4,
+      "use_auto_surround": true,
+      "use_autoclose": true,
+      "use_on_type_format": false,
+      "whitespace_map": { "space": null, "tab": null },
+      "word_diff_enabled": true,
+      "show_wrap_guides": true,
+      "wrap_guides": [100],
+      "inlay_hints": {
+        "edit_debounce_ms": 700,
+        "enabled": false,
+        "scroll_debounce_ms": 50,
+        "show_background": false,
+        "show_other_hints": false,
+        "show_parameter_hints": false,
+        "show_type_hints": false,
+        "show_value_hints": false,
+        "toggle_on_modifiers_press": { "alt": true },
+      },
+      "tasks": {},
+      "semantic_tokens": "combined",
+      "formatter": { "language_server": { "name": "ruff" } },
+      "language_servers": ["basedpyright", "ruff"],
+    },
+  },
+  "lsp": {
+    "basedpyright": {
+      "settings": {
+        // Налаштування самого Python
+        "python": {
+          "pythonPath": ".venv/bin/python",
+        },
+        // Налаштування аналізу (окремий блок, не всередині python!)
+        "basedpyright.analysis": {
+          "diagnosticMode": "openFilesOnly",
+          "exclude": [".venv", "**/__pycache__", "build", "dist", "venv"],
+          "autoImportCompletions": false,
+          "includeExternalModules": true,
+          "typeCheckingMode": "basic",
+
+          // Вимикаємо те, що за нас тепер робить Ruff
+          "reportUnusedVariable": false,
+          "reportUnusedImport": false,
+
+          // Налаштування підказок ( Alt у Zed)
+          "inlayHints": {
+            "callArgumentNames": true,
+            "functionReturnTypes": true,
+            "variableTypes": false,
+          },
+        },
+      },
+    },
+    "ruff": {
+      "initialization_options": {
+        "settings": {
+          "lineLength": 100,
+          "targetVersion": "py311",
+          "exclude": [".git", ".venv", "__pycache__", "build", "dist"],
+          "lint": {
+            "select": ["E", "W", "F", "I", "B", "C4", "UP", "RUF"],
+            "ignore": ["B008"],
+            "fixable": ["ALL"],
+            "unfixable": [],
+            "isort": {
+              "combineAsImports": true,
+              "linesAfterImports": 2,
+            },
+          },
+          "format": {
+            "quoteStyle": "double",
+            "indentStyle": "space",
+            "skipMagicTrailingComma": false,
+            "lineEnding": "auto",
+          },
+        },
+      },
+    },
+  },
+}
