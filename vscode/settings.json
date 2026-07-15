@@ -1,6 +1,6 @@
 {
     "accessibility.dimUnfocused.enabled": true,
-    "accessibility.dimUnfocused.opacity": 0.6,
+    "accessibility.dimUnfocused.opacity": 0.75,
     "editor.acceptSuggestionOnEnter": "on",
     "editor.accessibilitySupport": "off",
     "editor.allowVariableFonts": false,
@@ -51,6 +51,7 @@
     "editor.suggest.showClasses": true,
     "editor.unicodeHighlight.includeStrings": false,
     "scm.alwaysShowActions": true,
+    "scm.diffDecorations": "none",
     "security.workspace.trust.enabled": false,
     "onboarding.enabled": false,
     "window.density.editorTabHeight": "compact",
@@ -88,7 +89,7 @@
     "window.customMenuBarAltFocus": false,
     "window.newWindowDimensions": "maximized",
     "window.menuBarVisibility": "compact",
-    "window.title": " ",
+    "window.title": ">>> ${activeEditorMedium}",
     "window.titleBarStyle": "custom",
     "files.autoSave": "onFocusChange",
     "files.eol": "\n",
@@ -174,6 +175,7 @@
     "python.analysis.autoImportCompletions": false,
     "python.analysis.diagnosticPublishDelay": 1000,
     "python-envs.defaultEnvManager": "ms-python.python:venv",
+    "vsintellicode.features.python.deeplearning": "disabled",
     "ruff.lint.select": [
         "E",
         "W",
@@ -212,5 +214,6 @@
         ],
         "editor.wordBasedSuggestions": "off"
     },
-    "chat.titleBar.signIn.enabled": false
+    "chat.titleBar.signIn.enabled": false,
+    "workbench.colorTheme": "Aura Dark"
 }
