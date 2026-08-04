@@ -2,9 +2,10 @@
   // ==========================================
   // 1. СИСТЕМНІ НАЛАШТУВАННЯ ТА СЕСІЇ
   // ==========================================
+  "window_decorations": "client",
   "cli_default_open_behavior": "existing_window",
   "icon_theme": "Zed (Default)",
-  "theme": "GitHub Dark Default",
+  "theme": "Kanagawa Dragon - No Italics",
   "restore_on_startup": "last_session",
   "restore_on_file_reopen": true,
   "close_on_file_delete": true,
@@ -20,8 +21,8 @@
   // 2. ІНТЕРФЕЙС ТА ВІЗУАЛ (GUI)
   // ==========================================
   "ui_font_family": ".SystemUIFont",
-  "ui_font_size": 12,
-  "ui_font_weight": 500,
+  "ui_font_size": 11,
+  "ui_font_weight": 400,
   "bottom_dock_layout": "contained",
   "resize_all_panels_in_dock": ["left", "right", "bottom"],
   "active_pane_modifiers": {
@@ -38,6 +39,7 @@
     "show_branch_name": false,
     "show_branch_status_icon": false,
     "show_menus": false,
+    "show_worktree_name": true,
   },
 
   // ==========================================
@@ -53,7 +55,7 @@
     "show_diagnostics": "off",
   },
   "tab_bar": {
-    "show": true,
+    "show": false,
     "show_nav_history_buttons": false,
     "show_pinned_tabs_in_separate_row": false,
     "show_tab_bar_buttons": false,
@@ -62,7 +64,7 @@
     "enabled": false, // Тимчасові вкладки вимкнено повністю
   },
   "scrollbar": {
-    "show": "always",
+    "show": "never",
     "cursors": true,
     "git_diff": false,
     "search_results": true,
@@ -79,42 +81,42 @@
     "dock": "right",
     "entry_spacing": "standard",
     "git_status": true,
-    "default_width": 240,
+    "default_width": 160,
     "auto_reveal_entries": false,
     "auto_fold_dirs": false,
     "auto_open": { "on_create": true },
     "bold_folder_labels": false,
-    "indent_size": 9,
-    "indent_guides": { "show": "always" },
+    "indent_size": 7,
+    "indent_guides": { "show": "never" },
     "sort_mode": "directories_first",
     "sort_order": "default",
-    "starts_open": true,
+    "starts_open": false,
     "drag_and_drop": true,
     "button": true,
     "diagnostic_badges": false,
     "file_icons": true,
     "folder_icons": true,
-    "git_status_indicator": false,
+    "git_status_indicator": true,
     "hide_gitignore": false,
     "hide_hidden": false,
-    "hide_root": false,
+    "hide_root": true,
     "scrollbar": { "show": "always" },
     "show_diagnostics": "all",
     "sticky_scroll": true,
   },
-  "debugger": { "button": false },
+  "debugger": { "button": true },
   "outline_panel": {
     "button": true,
     "auto_fold_dirs": true,
     "auto_reveal_entries": true,
-    "default_width": 400,
+    "default_width": 240,
     "dock": "right",
     "expand_outlines_with_depth": 0,
-    "file_icons": true,
+    "file_icons": false,
     "folder_icons": true,
-    "git_status": true,
+    "git_status": false,
     "indent_guides": { "show": "never" },
-    "indent_size": 8,
+    "indent_size": 7,
     "scrollbar": { "show": "auto" },
   },
   "status_bar": {
@@ -122,7 +124,8 @@
     "active_language_button": true,
     "cursor_position_button": false,
     "line_endings_button": false,
-    "show_active_file": false,
+    "show_active_file": true,
+    "experimental.show": true,
   },
   "toolbar": {
     "agent_review": false,
@@ -131,12 +134,14 @@
     "quick_actions": false,
     "selections_menu": false,
   },
+  "diagnostics": { "button": true, "inline": { "enabled": false } },
+  "file_finder": { "file_icons": false, "modal_max_width": "large" },
 
   // ==========================================
   // 5. РЕДАКТОР КОДУ: ШРИФТИ ТА ВІЗУАЛ (Editor Look)
   // ==========================================
   "buffer_font_family": ".ZedMono",
-  "buffer_font_size": 11,
+  "buffer_font_size": 10,
   "buffer_font_weight": 400,
   "buffer_line_height": "standard",
   "buffer_font_features": {
@@ -163,6 +168,7 @@
   // ==========================================
   // 6. ПОВЕДІНКА РЕДАКТОРА ТА СКРОЛИНГ (Editor Behavior)
   // ==========================================
+  //
   "scroll_beyond_last_line": "one_page",
   "scroll_sensitivity": 1,
   "fast_scroll_sensitivity": 15,
@@ -226,7 +232,7 @@
     "dock": "bottom",
     "working_directory": "current_project_directory",
     "flexible": true,
-    "font_size": 11,
+    "font_size": 10,
     "font_weight": 400,
     "line_height": "standard",
     "minimum_contrast": 0,
@@ -240,7 +246,7 @@
     },
   },
   "journal": {
-    "path": "~",
+    "path": "~/Documents/projects",
     "hour_format": "hour24",
   },
 
@@ -278,9 +284,9 @@
     "**/*.pyc",
     "**/*.pyo",
     "**/*.pyd",
-    "**/.venv",
-    "**/venv",
-    "**/.env",
+    //"**/.venv"
+    //"**/venv",
+    //"**/.env",
     "**/.virtualenv",
     "**/.pytest_cache",
     "**/.mypy_cache",
@@ -296,6 +302,7 @@
   // ==========================================
   // 12. ШТУЧНИЙ ІНТЕЛЕКТ ТА ТЕЛЕМЕТРІЯ
   // ==========================================
+  "inline_code_actions": false,
   "disable_ai": true,
   "private_files": [
     "**/.env*",
@@ -312,6 +319,7 @@
   // ==========================================
   // 13. ПОРОЖНІ/РЕЗЕРВНІ ОБ'ЄКТИ
   // ==========================================
+
   "language_models": {},
   "auto_install_extensions": {},
   "auto_update_extensions": {},
@@ -329,18 +337,24 @@
   "enable_language_server": true,
   "languages": {
     "Python": {
-      "indent_guides": { "enabled": false },
+      "indent_guides": {
+        "enabled": true,
+        "active_line_width": 1,
+        "background_coloring": "disabled",
+        "coloring": "fixed",
+        "line_width": 1,
+      },
       "allow_rewrap": "in_comments",
       "always_treat_brackets_as_autoclosed": true,
       "auto_indent": "syntax_aware",
-      "auto_indent_on_paste": true,
+      "auto_indent_on_paste": false,
       "colorize_brackets": false,
       "completions": { "lsp": true },
       "document_folding_ranges": "on",
       "document_symbols": "on",
       "debuggers": [],
       "edit_predictions_disabled_in": [],
-      "show_edit_predictions": false,
+      "show_edit_predictions": false, // gray text
       "ensure_final_newline_on_save": true,
       "extend_comment_on_newline": false,
       "extend_list_on_newline": false,
@@ -363,7 +377,7 @@
       "use_on_type_format": false,
       "whitespace_map": { "space": null, "tab": null },
       "word_diff_enabled": true,
-      "show_wrap_guides": true,
+      "show_wrap_guides": false,
       "wrap_guides": [100],
       "inlay_hints": {
         "edit_debounce_ms": 700,
