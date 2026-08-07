@@ -80,7 +80,7 @@
   "project_panel": {
     "dock": "right",
     "entry_spacing": "standard",
-    "git_status": true,
+    "git_status": false,
     "default_width": 160,
     "auto_reveal_entries": false,
     "auto_fold_dirs": false,
@@ -96,7 +96,7 @@
     "diagnostic_badges": false,
     "file_icons": true,
     "folder_icons": true,
-    "git_status_indicator": true,
+    "git_status_indicator": false,
     "hide_gitignore": false,
     "hide_hidden": false,
     "hide_root": true,
@@ -364,7 +364,7 @@
       "jsx_tag_auto_close": { "enabled": false },
       "linked_edits": false,
       "line_ending": "prefer_lf",
-      "preferred_line_length": 100,
+      "preferred_line_length": 88,
       "prettier": {},
       "remove_trailing_whitespace_on_save": true,
       "show_completion_documentation": false,
@@ -427,7 +427,7 @@
     "ruff": {
       "initialization_options": {
         "settings": {
-          "lineLength": 100,
+          "lineLength": 88,
           "targetVersion": "py311",
           "exclude": [".git", ".venv", "__pycache__", "build", "dist"],
           "lint": {

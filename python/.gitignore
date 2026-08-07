@@ -9,22 +9,23 @@ wheels/
 .mypy_cache/
 .pytest_cache/
 
-
 # Ides
 .vscode/
 .zed/
-browser_profiles/
-test_data/
-
 
 # Virtual environments
-.venv
 venv
-.env
 env
+.venv
+.env
 
 # Files
 .*json
 .*db
 *.sqlite
 *.log
+GEMINI.md
+browser/
+data/
+gemini/
+agents/
