@@ -1,0 +1,8 @@
+{
+  "typeCheckingMode": "basic",
+  "reportExplicitAny": false,
+  "reportUnannotatedClassAttribute": false,
+  "reportUnusedVariable": false,
+  "reportUnusedImport": false,
+  "exclude": [".venv", "**/__pycache__", "build", "dist", "venv"],
+}
